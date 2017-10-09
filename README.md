@@ -82,13 +82,21 @@ Användarprofil
 * fk_profile_id (har skapat försaget)
 * restaurant
 * intresents (en lista av de som är intresserade)
+* tags
+
+#### Tag
+
+* id 
+* tag: meat/fish/vegetarian/vegan/raw/fancy/budget/ 
+
 
 #### Match 
 
 * match_id
 * date_creater (profile_id_fk)
 * date_accepter (profile_id_fk)
-*  
+* showInterest(profile_id_fk)
+  
 
 #### Chat
 
@@ -104,7 +112,7 @@ Användarprofil
 * name
 * location
 * menu
-
+* tags
 
 
 
