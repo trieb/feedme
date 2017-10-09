@@ -2,8 +2,8 @@
 
 ## Idé 
 
-Appen sätter upp en första dejt genom att matcha personer som vill gå på en speciell restaunga eller äta en vill typ av mat. 
-I appen kan man se vilja förslag som lagts ut och när man hitta något som lockar kan man titta på personerns profil innan man visar sitt intresse. 
+Appen sätter upp en första dejt genom att matcha personer som vill gå på en speciell resturang eller äta en speciell typ av mat. 
+I appen kan man se vilka förslag som lagts ut och när man hitta något som lockar kan man titta på personerns profil innan man visar sitt intresse. 
 Personen som lagt ut förslaget får notifiering om att det finns någon som är intresserad. Om det finns flera som är intresserade får hon/han välja någon varvid en matchning skapas. 
 
 ## Funktioner
