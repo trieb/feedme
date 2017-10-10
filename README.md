@@ -2,8 +2,8 @@
 
 ## Idé 
 
-Appen sätter upp en första dejt genom att matcha personer som vill gå på en speciell restaunga eller äta en vill typ av mat. 
-I appen kan man se vilja förslag som lagts ut och när man hitta något som lockar kan man titta på personerns profil innan man visar sitt intresse. 
+Appen sätter upp en första dejt genom att matcha personer som vill gå på en speciell restaurang eller äta en viss typ av mat. 
+I appen kan man se vilka förslag som lagts ut och när man hittar något som lockar kan man titta på personernas profil innan man visar sitt intresse. 
 Personen som lagt ut förslaget får notifiering om att det finns någon som är intresserad. Om det finns flera som är intresserade får hon/han välja någon varvid en matchning skapas. 
 
 ## Funktioner
@@ -20,15 +20,15 @@ Personen som lagt ut förslaget får notifiering om att det finns någon som är
   * Rating
   * Antal besök
 * Topplista
-  * Baserat på statestiken 
+  * Baserat på statistiken 
 * Restauranger ska kunna registrera sig. 
 * Sätta upp dubbeldejt
-* Sök dejt (typ av mat, plats, avstånd, ålder, kön) 
+* Söka dejt (typ av mat, plats, avstånd, ålder, kön) 
 * Visa förslag
   * Hur? Kort, lista, karta.. ? 
 * Skapa matchningar
 * Chatta 
-* Pushnotifiering
+* Pushnotifieringar
 * Föreslå dejter baserat på vad man har för inställningar
 
 
@@ -36,14 +36,12 @@ Personen som lagt ut förslaget får notifiering om att det finns någon som är
 
 * Riktad reklam mot kunden för en viss restaurang. 
 Restaurangen får betala för att visa sin meny eller specialerbjudande för kunderna direkt i appen. 
-  ** Budgivning/auktion på att hamna högt upp i listan. 
+  ** Budgivning/auktion för att hamna högt upp i listan. 
 * Betala notan direkt i appen (splitta/eller bestämma vem som ska betala) 
 * Premiumtjänster
   * Ingen begränsning på dejtingfrekvens
-  * 
 * Restaurangen får betala en liten summa för varje genererat besök. Vi får en liten del av totala summan. 
 * Restaurangen får betala för att visa sin meny i appen. 
-
 
 
 ## Systemdesign
@@ -79,9 +77,9 @@ Användarprofil
 #### DejtProposal
 
 * date_id
-* fk_profile_id (har skapat försaget)
+* fk_profile_id (har skapat förslaget)
 * restaurant
-* intresents (en lista av de som är intresserade)
+* interested (en lista av de som är intresserade)
 * tags
 
 #### Tag
