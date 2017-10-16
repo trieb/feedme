@@ -26,6 +26,7 @@ namespace feedme
 
             Console.WriteLine("Hello World!");
 
+            // Create profiles
             Profile p1 = new Profile("donald@gmail.com", "secret");
             profiles.Add(p1);
             Profile p2 = new Profile("hans@boll.se", "hemligt");
@@ -34,8 +35,9 @@ namespace feedme
             profiles.Add(p3);
             Profile p4 = new Profile("erika@gmail.com", "secret4");
             profiles.Add(p4);
-            
-            
+
+            // Create DatePropsal
+            p1.CreateDateProposal("Romantic dinner");   
         }
     }
 }

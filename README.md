@@ -48,7 +48,7 @@ Restaurangen får betala för att visa sin meny eller specialerbjudande för kun
 
 ### Klasser
 
-#### User
+#### User 
 
 Användardatabas för inloggning
 
@@ -56,6 +56,7 @@ Användardatabas för inloggning
 * email 
 * password
 * phone number
+
 
 #### Profile : User
 
@@ -114,4 +115,11 @@ Användarprofil
 * tags
 
 
+## Tidsuppskattning 
+
+* Basstruktur (1h) 
+* Test  (2h) 
+* Databaskoppling (1h)
+* Säkerhet (1h)
+* Design av UI (2h)
 

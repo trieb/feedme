@@ -14,5 +14,12 @@ namespace feedme
         {
             Console.WriteLine("Creating new Profile");
         }
+
+        public void CreateDateProposal(string title)
+        {
+            DateProposal new_date = new DateProposal(title);
+            // Get user input and add to DateProposal-object
+        }
+
     }
 }
