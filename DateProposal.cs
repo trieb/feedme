@@ -2,9 +2,9 @@ using System;
 
 namespace feedme
 {
-    class User
+    class DateProposal
     {
-        public User()
+        public DateProposal()
         {
             Console.WriteLine("Creating new User");
         }

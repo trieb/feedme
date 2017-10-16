@@ -2,9 +2,9 @@ using System;
 
 namespace feedme
 {
-    class User
+    class Chat
     {
-        public User()
+        public Chat()
         {
             Console.WriteLine("Creating new User");
         }

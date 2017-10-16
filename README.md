@@ -32,7 +32,7 @@ Personen som lagt ut förslaget får notifiering om att det finns någon som är
 * Föreslå dejter baserat på vad man har för inställningar
 
 
-## Monetization
+## Monetization - Intäkter
 
 * Riktad reklam mot kunden för en viss restaurang. 
 Restaurangen får betala för att visa sin meny eller specialerbjudande för kunderna direkt i appen. 
@@ -81,6 +81,7 @@ Användarprofil
 * restaurant
 * interested (en lista av de som är intresserade)
 * tags
+* showInterest(profile_id_fk)
 
 #### Tag
 
@@ -93,7 +94,7 @@ Användarprofil
 * match_id
 * date_creater (profile_id_fk)
 * date_accepter (profile_id_fk)
-* showInterest(profile_id_fk)
+
   
 
 #### Chat
