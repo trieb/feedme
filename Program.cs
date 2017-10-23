@@ -1,43 +1,42 @@
 ﻿using System;
-using System.Collections.Generic;
+
 
 namespace feedme
 {
     class Program
     {
-        /*    
-        Since this is a toy example we will not use a real database, 
-        instead we will just keep everything in arrays in the main program just to keep it simple. 
-        The fokus is on the use of classes. 
-        
-        * User            users[]
-        * Profile         profiles[]
-        * RestaurangOwner restaurantowners[]
-        * DateProposal    dateproposals[]
-        * Match           matches[]
-        * Chat            chats[]
-        * Restaurant      restaurants[]
-         */
-        
-        
         static void Main(string[] args)
         {
-            List<Profile> profiles = new List<Profile>();
+            Data dataObject = new Data();
 
             Console.WriteLine("Hello World!");
 
             // Create profiles
             Profile p1 = new Profile("donald@gmail.com", "secret");
-            profiles.Add(p1);
+            dataObject.profiles.Add(p1);
             Profile p2 = new Profile("hans@boll.se", "hemligt");
-            profiles.Add(p2);
+            dataObject.profiles.Add(p2);
             Profile p3 = new Profile("johanna@gmail.com", "secret2");
-            profiles.Add(p3);
+            dataObject.profiles.Add(p3);
             Profile p4 = new Profile("erika@gmail.com", "secret4");
-            profiles.Add(p4);
+            dataObject.profiles.Add(p4);
 
             // Create DatePropsal
-            p1.CreateDateProposal("Romantic dinner");   
+            p1.CreateDateProposal(dataObject, "Romantic dinner");
+            p2.CreateDateProposal(dataObject, "Budget dinner for two");
+
+            // List all DateProposals
+            p3.ListDateProposals(dataObject);
+
+            // Show intereset for DateProposal 1
+            p3.ShowInterestForDateProposal(dataObject, 1);
+            p4.ShowInterestForDateProposal(dataObject, 1);
+            p4.ShowInterestForDateProposal(dataObject, 2);
+
+            // Show list of profile interesed in DateProposal
+            p1.ShowDateSuggestions(dataObject);
+            p1.SelectProfileToMatch(dataObject, 3);
+
         }
     }
 }
